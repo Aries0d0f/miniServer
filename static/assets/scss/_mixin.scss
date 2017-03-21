@@ -1,0 +1,31 @@
+//mixin
+//background
+@mixin backgroundConfig {
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+//logo
+@mixin logoConfig {
+	width: 20em;
+	height: 20em;
+	border-radius: 100%;
+	display: block;
+	margin: .5em;
+}
+
+//icon
+@mixin iconConfig {
+	font-family: 'FontAwesome';
+	color: $white;
+	font-size: 1em;
+}
+
+@mixin flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}

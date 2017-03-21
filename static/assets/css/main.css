@@ -1,0 +1,445 @@
+@import url(font-awesome.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format("opentype"); }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format("opentype"); }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format("opentype"); }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format("opentype"); }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format("opentype"); }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format("opentype"); }
+h1.title {
+  text-align: center;
+  font-size: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h2.title {
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h3.title {
+  text-align: center;
+  font-size: 1.75rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  line-height: 1em; }
+
+p.title {
+  text-align: center;
+  font-size: 1.25rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8em; }
+
+a {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  h1.title {
+    font-size: 2rem; }
+
+  h2.title {
+    font-size: 1.75rem; }
+
+  h3.title {
+    font-size: 1.5rem; }
+
+  p.title {
+    font-size: 1rem; } }
+h1.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h2.subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h3.subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  line-height: 1em; }
+
+p.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8em; }
+
+a {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  h1.subtitle {
+    font-size: 1.6rem; }
+
+  h2.subtitle {
+    font-size: 1.4rem; }
+
+  h3.subtitle {
+    font-size: 1.2rem; }
+
+  p.subtitle {
+    font-size: 0.8rem; } }
+h1.contents {
+  text-align: center;
+  font-size: 1.75rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h2.contents {
+  text-align: center;
+  font-size: 1.4rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h3.contents {
+  text-align: center;
+  font-size: 1.225rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  line-height: 1em; }
+
+p.contents {
+  text-align: center;
+  font-size: 0.875rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8em; }
+
+a {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  h1.contents {
+    font-size: 1.4rem; }
+
+  h2.contents {
+    font-size: 1.225rem; }
+
+  h3.contents {
+    font-size: 1.05rem; }
+
+  p.contents {
+    font-size: 0.7rem; } }
+h1.footnote {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h2.footnote {
+  text-align: center;
+  font-size: 0.8rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  line-height: 1em; }
+
+h3.footnote {
+  text-align: center;
+  font-size: 0.7rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  line-height: 1em; }
+
+p.footnote {
+  text-align: center;
+  font-size: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8em; }
+
+a {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  h1.footnote {
+    font-size: 0.8rem; }
+
+  h2.footnote {
+    font-size: 0.7rem; }
+
+  h3.footnote {
+    font-size: 0.6rem; }
+
+  p.footnote {
+    font-size: 0.4rem; } }
+.contents {
+  text-align: left !important;
+  text-indent: 2em; }
+
+#footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  color: #0ea3a3; }
+  #footer > * {
+    margin: .5em 0;
+    font-weight: 200; }
+  #footer ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    #footer ul li {
+      color: #0ea3a3;
+      display: inline-flex; }
+      #footer ul li a {
+        color: rgba(255, 255, 255, 0.8); }
+  #footer .icons li {
+    transition: all .3s;
+    font-size: 1em;
+    width: 1em;
+    padding: .5em;
+    border-radius: 1em;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1px #0ea3a3; }
+    #footer .icons li a {
+      margin: auto;
+      color: #0ea3a3; }
+    #footer .icons li:hover {
+      transition: all .3s;
+      background-color: #0ea3a3;
+      color: white !important; }
+      #footer .icons li:hover a {
+        color: white !important; }
+  #footer .label {
+    display: none; }
+  #footer .copyright li {
+    font-size: 1rem !important; }
+    @media screen and (max-width: 768px) {
+      #footer .copyright li {
+        font-size: 0.7rem !important; } }
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2C3E50; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 200; }
+
+.icon,
+i {
+  font-family: 'FontAwesome';
+  font-size: 1em; }
+
+#app {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid #0ea3a3;
+  border-radius: 1em; }
+  #app header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70%; }
+    #app header .container {
+      height: auto;
+      padding: .5em; }
+      #app header .container i {
+        color: white;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center; }
+      #app header .container h1 {
+        font-weight: 400; }
+      #app header .container p {
+        font-weight: 100; }
+  #app .status {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30%; }
+    #app .status h1 {
+      color: rgba(255, 255, 255, 0.8);
+      justify-content: center;
+      margin: 1em auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  #app .button,
+  #app .icon {
+    cursor: pointer;
+    padding: 1em;
+    margin: auto;
+    color: white;
+    transition: all .3s;
+    border: 1px solid #0ea3a3;
+    border-right: none;
+    border-left: none; }
+    #app .button > *,
+    #app .icon > * {
+      transition: all .3s;
+      justify-content: center;
+      text-align: center; }
+    #app .button:hover,
+    #app .icon:hover {
+      transition: all .3s;
+      background-color: #0ea3a3;
+      color: white;
+      justify-content: center; }
+      #app .button:hover > *,
+      #app .icon:hover > * {
+        transition: all .3s;
+        color: white; }
+
+.x1 {
+  font-size: 1em; }
+
+.x2 {
+  font-size: 2em; }
+
+.x3 {
+  font-size: 3em; }
+
+.x4 {
+  font-size: 4em; }
+
+.x5 {
+  font-size: 5em; }
+
+/*# sourceMappingURL=main.css.map */

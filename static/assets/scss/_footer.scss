@@ -1,0 +1,57 @@
+#footer {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    color: $green;
+    >* {
+        margin: .5em 0;
+        font-weight: 200;
+    }
+    ul {
+        @include flex;
+        justify-content: space-around;
+        flex-direction: row;
+        li {
+            color: $green;
+            display: inline-flex;
+            a {
+                color: rgba($white,.8);
+            }
+        }
+    }
+    .icons {
+        li {
+            transition: all .3s;    
+            font-size: 1em;
+            width: 1em;
+            padding: .5em;
+            border-radius: 1em;
+            justify-content: center;
+            box-shadow: inset 0 0 0 1px $green;
+            a {
+                margin: auto;
+                color: $green;
+            }
+            &:hover {
+                transition: all .3s;
+                background-color: $green;
+                color: $white !important;
+                a {
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    .label {
+        display: none;
+    }
+    .copyright {
+        li {
+            font-size: $footnote !important;
+            @media screen and (max-width: 768px) {
+                font-size: $footnote * .7 !important;
+            }
+        }
+    }
+}

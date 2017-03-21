@@ -1,0 +1,114 @@
+@import "compass/reset";
+@import "mixin";
+@import "color";
+@import "font";
+@import "footer";
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    @include flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: $white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.icon,
+i {
+    font-family: 'FontAwesome';
+    font-size: 1em;
+}
+
+#app {
+    @include flex;
+    height: 50%;
+    width: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid $green;
+    border-radius: 1em;
+    header {
+        @include flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 70%;
+        .container {
+            height: auto;
+            padding: .5em;
+            i {
+                color: $white;
+                @include flex;
+                justify-content: center;
+            }
+            h1 {
+                font-weight: 400;
+            }
+            p {
+                font-weight: 100;
+            }
+        }
+    }
+    .status {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 30%;
+        h1 {
+            color: rgba($white,.8);
+            justify-content: center;
+            margin: 1em auto;
+            @include flex;
+        }
+    }
+    .button,
+    .icon {
+        cursor: pointer;
+        padding: 1em;
+        margin: auto;
+        color: $white;
+        transition: all .3s;
+        border: 1px solid $green;
+        border-right: none;
+        border-left: none;
+        >* {
+            transition: all .3s;
+            justify-content: center;
+            text-align: center;
+        }
+        &:hover {
+            transition: all .3s;
+            background-color: $green;
+            color: $white;
+            justify-content: center;
+            >* {
+                transition: all .3s;
+                color: $white;
+            }
+        }
+    }
+}
+
+$sizeList: 1 2 3 4 5;
+@each $size in $sizeList {
+    .x#{$size} {
+        font-size: 1em * $size;
+    }
+}
